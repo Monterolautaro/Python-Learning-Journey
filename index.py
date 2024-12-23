@@ -85,3 +85,24 @@ def tries_rounded_numbers(num):
 
 # When you pass a -1, it will round to the nearest 10, for -2 to 100, for -3 to 1000, etc.
 print(tries_rounded_numbers(2222.2333333))
+
+
+# In the previous exercise, the candy-sharing friends Alice,
+#  Bob and Carol tried to split candies evenly. For the sake of their friendship,
+#  any candies left over would be smashed. For example, if they collectively bring
+#  home 91 candies, they'll take 30 each and smash 1.
+
+def to_smash(total_candies, friends_number = 3):
+    """Return the number of leftover candies that must be smashed after distributing
+    the given number of candies evenly between the friends given, if no friends given,
+    are set by default in three.
+    
+    >>> to_smash(91)
+    1
+    """
+    if friends_number > 0:
+        result = total_candies % friends_number
+        return result
+
+print(to_smash(90))
+print(to_smash(91, 4))
