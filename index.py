@@ -37,6 +37,24 @@ print(7 // 3)
 
 help(print)
 
+### DESEMPAQUETADO MULTIPLE, O ASIGNACION SIMULTANEA
+a, b, c = 1, 2, 3
+
+print(a, b, c)
+
+# Con listas
+a = [1, 2, 3]
+b = [4, 5, 6]
+
+print("Antes del cambio", { "a": f"{a}", "b": f"{b}"})
+
+a, b = b, a    # Se crea una tupla y se desempaqueta
+
+# Primero python crea la tupla temporal:                      a, b = (b, a)
+# Luego le asigna los respectivos valores a las variables:    a = b, b = a
+
+print("Despues del cambio",{ "a": f"{a}", "b": f"{b}"})
+
 def add(a, b, c):
     """return the maximum of three sums of 3 numbers (a, b, c)
     >>> add(1, 2, 3)
@@ -105,4 +123,4 @@ def to_smash(total_candies, friends_number = 3):
         return result
 
 print(to_smash(90))
-print(to_smash(91, 4))
+print(to_smash(91, 4)) 
