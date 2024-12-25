@@ -124,3 +124,117 @@ def to_smash(total_candies, friends_number = 3):
 
 print(to_smash(90))
 print(to_smash(91, 4)) 
+
+
+
+## Booleans y condicionales
+
+# Your code goes here. Define a function called 'sign'
+
+def sign(num): 
+    ''' takes a numerical argument and returns -1 if it's negative,
+     1 if it's positive, and 0 if it's 0.
+    >>> sign(10)
+    1
+     '''
+    if num < 0:
+        return -1
+
+    elif num == 0:         ## En python se usa "elif" en lugar del "else if" de javascript
+            return 0
+    return 1 
+
+help(sign)
+
+
+
+def to_smash(total_candies):
+    """Return the number of leftover candies that must be smashed after distributing
+    the given number of candies evenly between 3 friends.
+    
+    >>> to_smash(91)
+    1
+    """
+    if total_candies <= 1:
+        print("Splitting", total_candies, "candy")
+    else:
+        print("Splitting", total_candies, "candies")
+        return total_candies % 3
+
+to_smash(91)
+to_smash(1)
+
+# Here's a slightly more succinct solution using a conditional expression:
+
+# print("Splitting", total_candies, "candy" if total_candies == 1 else "candies")
+
+
+## Abstraction
+
+def is_negative(number):
+    if number < 0:
+        return True
+    else:
+        return False
+
+def concise_is_negative(number):
+    return is_negative(number)
+
+
+def wants_plain_hotdog(ketchup, mustard, onion):
+    """Return whether the customer wants a plain hot dog with no toppings.
+    """
+    return not (ketchup or mustard or onion)
+
+
+
+def exactly_one_sauce(ketchup, mustard, onion):
+    """Return whether the customer wants either ketchup or mustard, but not both.
+    (You may be familiar with this operation under the name "exclusive or")
+    """
+    if ketchup and mustard == True:
+        return not ketchup and not mustard
+    elif ketchup == True:
+        return ketchup
+    elif mustard == True:
+        return mustard
+    return False
+
+
+# Solution:
+
+# return (ketchup and not mustard) or (mustard and not ketchup)
+
+
+
+## SUMA DE BOOLEANOS USANDO INT
+
+def exactly_one_topping(ketchup, mustard, onion):
+    """Return whether the customer wants exactly one of the three available toppings
+    on their hot dog.
+    """
+    validate = int(True)
+    ketchup = int(ketchup)
+    mustard = int(mustard)
+    onion = int(onion)
+
+    sumToppings = ketchup + mustard + onion
+
+    if sumToppings > 1:
+        return False
+    elif sumToppings <1:
+        return False
+    return True
+
+# Correct:
+
+# Solution:
+# This condition would be pretty complicated to express using just and, or and not, but using boolean-to-integer
+#  conversion gives us this short solution:
+
+# return (int(ketchup) + int(mustard) + int(onion)) == 1
+
+# Fun fact: we don't technically need to call int on the arguments. Just by doing addition with booleans, 
+# Python implicitly does the integer conversion. So we could also write...
+
+# return (ketchup + mustard + onion) == 1
