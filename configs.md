@@ -18,7 +18,6 @@
 - Para ello, se utiliza este comando: " deactivate "
 
 
-
 **Recordatorio**
 
 *Siempre generar el archivo .gitignore y añadir el entorno virtual ahí*
