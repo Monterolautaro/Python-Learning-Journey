@@ -22,7 +22,7 @@ import numpy as np
 ## Los arrays de numpy son mucho mas rápidos y permiten hacer operaciones matematicas directamente 
 ## en el array, sin tener que recorrer los valores uno por uno.
 
-celsius = np.array([-40, -10, 0, 8, 15, 22, 38], dtype=float)   
+celsius = np.array([-40, -10, 0, 8, 15, 22, 38], dtype=float) 
 fahrenheit = np.array([-40, 14, 32, 46, 59, 72, 100], dtype=float)
 
 
