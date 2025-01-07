@@ -5,8 +5,8 @@ Este repositorio tiene como objetivo documentar todo mi proceso de aprendizaje e
 ## Estructura del Repositorio
 
 1. **Fundamentos de Python**  
-   - En esta sección encontrarás ejercicios sobre los conceptos básicos y fundamentales de Python.  
-   [Accede aquí](./fundamentos-python/index.py).
+   - En esta sección encontrarás teoría sobre los conceptos básicos y fundamentales de Python.  
+   [Accede aquí](./fundamentos-python/docs/fundamentos.md).
 
 2. **Red Neuronal para Clasificación de Imágenes**  
    - Proyecto práctico donde se implementa una red neuronal para la clasificación de imágenes.  
