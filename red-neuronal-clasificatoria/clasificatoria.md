@@ -1,8 +1,8 @@
-# **Documentación del sistema de clasificación de imagenes**
+# **Documentación del sistema de clasificación de imágenes**
 ```bash
-En este documento voy a dejar documentado la explicación detallada de como funciona
-el sistema de clasificación de imagenes, detallando todo acerca del funcionamiento de
-cada metodo utilizado, cada tupla, número, etc.
+Este documento detalla el funcionamiento del sistema de clasificación de imágenes,
+con teoría sobre todo acerca del funcionamiento de cada metodo utilizado, cada tupla, número,
+etc.
 
 En index.py habrán comentarios que empiecen con ### 
 los cuales van a decir en que número va a estar la explicación
