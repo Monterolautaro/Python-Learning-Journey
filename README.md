@@ -2,6 +2,8 @@
 
 Este repositorio tiene como objetivo documentar todo mi proceso de aprendizaje en **Python**, **Deep Learning** y **Machine Learning**. Aquí subo ejercicios prácticos, proyectos y recursos educativos con el fin de repasar y mejorar mis habilidades en estas áreas.
 
+**Toda la teoría sobre fundamentos de python la obtuve del curso de python que está en Kaggle, traducido al español por mi**
+
 ## Estructura del Repositorio
 
 1. **Fundamentos de Python**  
