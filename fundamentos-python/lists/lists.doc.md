@@ -12,6 +12,7 @@ En esta sección estará la teoría vinculada al archivo de práctica: [listas](
 6. [Objects](#pausa-para-hablar-sobre-objects)
 7. [List methods](#list-methods)
 8. [Searching lists](#searching-lists)
+9. [Tuplas](#tuplas)
 
 ## Listas
 - ***Las listas en python representan secuencias de valores ordenadas. Acá hay un ejemplo de como crearlas:***
@@ -226,4 +227,96 @@ print(planets)
 
 ## Searching lists
 
+- ***Podemos obtener el índice de un elemento especifico en una lista usando el metodo*** list.index:
+```bash
+planets.index('Earth')
+# Salida: 2
+``` 
 
+- ***Podemos usar el operador*** in ***para determinar si una lista contiene un determinado valor:***
+```bash
+"Earth" in planets
+# Salida: True
+
+"Calbefraques" in planets
+# Salida: False
+```
+
+- ***Hay muchos métodos para las listas, como*** clear, append, copy, ***etc. Para obtener mas información acerca de todos estos metodos, podemos usar*** help()***:***
+```bash
+help(planets)
+# Salida: 
+# Help on list object:
+
+# class list(object)
+#  |  list(iterable=(), /)
+#  |  
+#  |  Built-in mutable sequence.
+#  |  
+#  |  If no argument is given, the constructor creates a new empty list.
+#  |  The argument must be an iterable if specified.
+#  |  
+#  |  Methods defined here:
+#  |  
+#  |  __add__(self, value, /)
+#  |      Return self+value.
+#  |  
+#  |  __contains__(self, key, /)
+#  |      Return key in self.
+#  |  
+#  |  __delitem__(self, key, /)
+#  |      Delete self[key].
+#  |  
+#  |  __eq__(self, value, /)
+#  |      Return self==value.
+
+#  etc
+```
+
+## Tuplas
+
+Las tuplas son casi exactamente iguales a las listas. Difieren en dos cosas:
+
+1. ***La sintaxis para crearlas requiere de parentesis*** () ***en lugar de de corchetes*** [].
+```bash
+tuple = (1, 2, 3)
+
+## El equivalente:
+tuple = 1, 2, 3
+# Salida: (1, 2, 3)
+```
+
+2. ***No pueden ser modificadas, son inmutables.*** 
+```bash
+tuple[0] = 100
+# Salida: ---------------------------------------------------------------------------
+# TypeError                                 Traceback (most recent call last)
+# /tmp/ipykernel_19/816329950.py in <module>
+# ----> 1 tuple[0] = 100
+
+# TypeError: 'tuple' object does not support item assignment
+```
+
+- ***Las tuplas a veces son usadas para funciones que retornan multiples valores.***
+    - ***Por ejemplo, el método de objectos float*** as_integer_ratio() ***retorna un numerador y un denominador en forma de tupla:***
+```bash
+x = 0.125
+x.as_integer_ratio()
+# Salida: (1, 8)
+```
+
+- ***Estos valores individuales pueden ser asignados individualmente de esta manera:***
+```bash
+numerator, denominator = x.as_integer_ratio()
+print(numerator / denominator)
+# Salida: 0.125
+```
+
+- ***Finalmente llegamos al clásico truco tonto de Python para intercambiar dos variables:***
+```bash
+a = 1
+b = 0
+a, b = b, a
+print(a, b)
+# Salida: 0 1
+```
