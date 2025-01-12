@@ -75,6 +75,8 @@ def multi_word_search(doc_list, keywords):
     for keyword in keywords:
         res[keyword] = []  # inicializo una lista vacía para cada keyword
 
+        # el método enumerate funciona para iterar sobre una secuencia (como listas, tuplas, cadenas de texto o rangos de números).
+        # Devuelve el índice, y el elemento actual de la secuencia.
         for i, doc in enumerate(doc_list):
             # normalizo y proceso el documento en palabras
             words = [parte.strip('.,!?') for subcadena in doc.lower().split(' ') for parte in subcadena.split(',')]
