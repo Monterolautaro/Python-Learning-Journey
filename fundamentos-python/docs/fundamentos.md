@@ -15,3 +15,6 @@ En este documento encontrarás enlaces a la teoría sobre los fundamentos de pyt
 
 5. Cadenas y diccionarios
 [Accede aquí](../dictionaries/dictionaries.doc.md)
+
+6. Librerias externas 
+[Accede aqui](../ext-libraries/libraries.doc.md)
