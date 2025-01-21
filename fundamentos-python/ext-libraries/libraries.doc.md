@@ -135,7 +135,7 @@ help(rolls.ravel)
 #     ndarray.flat : a flat iterator on the array.
 ```
 
-Para saber mas acerca de los numpy arrays, puedes ver la documentación oficial (Aquí)[https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.ndarray.html]
+Para saber mas acerca de los numpy arrays, puedes ver la documentación oficial [Aquí](https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.ndarray.html)
 
 
 ### Operator overloading
