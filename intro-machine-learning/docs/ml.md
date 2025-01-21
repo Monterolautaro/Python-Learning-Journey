@@ -9,3 +9,6 @@ En este documento encontrarás enlaces a la teoría sobre la teoría de introduc
 
 3. El primer modelo de aprendizaje automático.
 [Accede aquí](../first-model/first-model.doc.md)
+
+4. Validación de modelos de aprendizaje automático.
+[Accede aquí](../model-validation/mv.doc.md)
