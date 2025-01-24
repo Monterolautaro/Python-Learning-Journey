@@ -1,5 +1,8 @@
 # Teoría básica sobre la válidación de modelos de aprendizaje automático
-# Indice
+
+En esta sección estará la teoría vinculada al archivo de práctica: [Model validation](./mv.py)
+
+## Indice
 
 1. [Introducción](#introducción)
 2. [The problem with example scores](#the-problem-with-in-sample-scores)
